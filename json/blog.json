@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Корисні соки: як вибрати найкращі для здоров'я серед десятків варіантів у магазинах, на що звертати увагу при виборі, які інгредієнти можуть бути шкідливими, та як знайти справді натуральний продукт, який принесе користь організму щодня",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog1.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 2,
+    "title": "ТОП-5 суперфудів для щоденного імунітету",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog2.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 3,
+    "title": "Швидкі сніданки: 3 ідеї за 10 хвилин",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog3.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 4,
+    "title": "Салати, що заряджають: осінні рецепти",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog4.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 5,
+    "title": "Чому варто обирати хліб з цільного зерна",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog5.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 6,
+    "title": "Вітаміни з їжі: що варто знати",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog6.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 7,
+    "title": "Еко-пакування: як зменшити відходи",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog7.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 8,
+    "title": "Мед і його користь: міфи та факти",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog8.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 9,
+    "title": "Користь кисломолочних продуктів для травлення",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog9.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 10,
+    "title": "Зелений смузі: рецепти для бадьорого ранку",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 65,
+    "date": "2021-11-18",
+    "image": "img/blog-img/blog10.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 11,
+    "title": "Корисні перекуси для кожного дня",
+    "category": "Закуски",
+    "author": "Адмін",
+    "comments": 40,
+    "date": "2021-04-25",
+    "image": "img/blog-img/recent-1.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 12,
+    "title": "Як обрати свіжі органічні продукти",
+    "category": "Овочі",
+    "author": "Адмін",
+    "comments": 22,
+    "date": "2021-04-25",
+    "image": "img/blog-img/recent-2.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 13,
+    "title": "ТОП продуктів для зміцнення здоров'я",
+    "category": "Свіжі фрукти",
+    "author": "Адмін",
+    "comments": 30,
+    "date": "2021-04-25",
+    "image": "img/blog-img/recent-3.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 14,
+    "title": "Овочеві страви, які легко приготувати",
+    "category": "Овочі",
+    "author": "Адмін",
+    "comments": 10,
+    "date": "2022-01-10",
+    "image": "img/blog-img/blog11.webp",
+    "link": "single-blog.html"
+  },
+  {
+    "id": 15,
+    "title": "Рецепти здорових десертів",
+    "category": "Овочі",
+    "author": "Адмін",
+    "comments": 5,
+    "date": "2022-02-05",
+    "image": "img/blog-img/blog12.webp",
+    "link": "single-blog.html"
+  }
+]

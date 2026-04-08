@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог EcoBazar: поради щодо здорового харчування, рецепти, огляди продуктів та корисні поради для щоденного здорового способу життя.">
+    <title>Блог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles-minify.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="cart-modal-container"></div>
+    <section class="header-section">
+        <header>
+            <div class="top-bar">
+                    <span class="address">
+                        <svg width="17" height="20">
+                            <use xlink:href="img/sprite.svg#map-pin"></use>
+                        </svg>
+                        Місцезнаходження магазину: Лінкольн-344, Іллінойс, Чикаго, США
+                    </span>
+                    <span class="auth-links">
+                        <span>Укр
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span>
+                        <span>  Грн 
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span><span>|</span>
+                        <a href="sign-in.html">Увійти</a>
+                    </span>
+            </div>
+            <div class="main-header container">
+                <div class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-burger"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark"></i>
+                </div>
+                <svg width="183" height="39">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Пошук</button>
+                </div>
+                <div class="cart-bar">
+                    <a href="whitelist.html">
+                        <svg width="32" height="33">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-cart-btn">
+                        <svg width="37" height="38">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <div class="cart-info">
+                        <p class="cart-title">Кошик:</p>
+                        <p class="cart-price">$57.00</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar nav-shop">
+                <ul class="nav-links">
+                    <li class = "main"><a href="index.html">Головна<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="shop.html">Магазин<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a class="active-nav">Блог<i class="fa-sharp fa-solid fa-chevron-up"></i></a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+                <a href="tel:2195550114" class="phone">
+                    <svg width="28" height="28">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    (219) 555-0114</a>
+            </nav>
+        </header> 
+    </section>
+    <section class="blog-bg">
+        <span><i class="fa-solid fa-house"></i></span>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Блог</span>
+    </section>
+    <main class="blogs container">
+        <aside class="blog-sidebar">
+            <button class="filter-toggle" id="filterToggle">
+                <i class="fa-solid fa-filter"></i>
+                <span>Фільтри</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="sidebar-content" id="sidebarContent">
+                <div class="sidebar-search">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Пошук...">
+                    </div>
+                </div>
+                <hr \>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Найкращі категорії</h3>
+                    <ul class="categories-list">
+                        <li>
+                            <a href="#">Свіжі фрукти</a>
+                            <span class="count">(134)</span>
+                        </li>
+                        <li>
+                            <a href="#">Овочі</a>
+                            <span class="count">(150)</span>
+                        </li>
+                        <li>
+                            <a href="#">Кулінарія</a>
+                            <span class="count">(54)</span>
+                        </li>
+                        <li>
+                            <a href="#">Закуски</a>
+                            <span class="count">(47)</span>
+                        </li>
+                        <li>
+                            <a href="#">Напої</a>
+                            <span class="count">(43)</span>
+                        </li>
+                        <li>
+                            <a href="#">Краса і здоров'я</a>
+                            <span class="count">(38)</span>
+                        </li>
+                        <li>
+                            <a href="#">Хліб та випічка</a>
+                            <span class="count">(15)</span>
+                        </li>
+                    </ul>
+                </div>
+                <hr \>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Popular Tag</h3>
+                    <div class="tags-cloud">
+                        <a href="#" class="tag active">Здорова дієта</a> 
+                        <a href="#" class="tag">З низьким вмістом жиру</a> 
+                        <a href="#" class="tag">Вегетаріанська дієта</a> 
+                        <a href="#" class="tag">Хліб</a> 
+                        <a href="#" class="tag">Дитяче харчування</a> 
+                        <a href="#" class="tag">Вітаміни</a> 
+                        <a href="#" class="tag">Закуски</a> 
+                        <a href="#" class="tag">Тіффін</a> 
+                        <a href="#" class="tag">М'ясо</a> 
+                        <a href="#" class="tag">Запуск</a> 
+                        <a href="#" class="tag">Вечеря</a>
+                    </div>
+                </div>
+                <hr \>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Наша галерея</h3>
+                    <div class="gallery-grid">
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog1.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog2.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog3.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog9.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog5.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog6.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog7.webp" alt="Gallery">
+                        </a>
+                        <a href="#" class="gallery-item">
+                            <img src="img/blog-img/blog8.webp" alt="Gallery">
+                        </a>
+                    </div>
+                </div>
+                <hr \>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Нещодавно додані</h3>
+                    <div class="recent-posts">
+                        <article class="recent-post">
+                            <img src="img/blog-img/recent-1.webp" alt="Post">
+                            <div class="recent-post-content">
+                                <span></span>
+                                <h4><a href="#">Корисні перекуси для кожного дня</a></h4>
+                                <div class="post-meta">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>Квіт. 25, 2021</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="recent-post">
+                            <img src="img/blog-img/recent-2.webp" alt="Post">
+                            <div class="recent-post-content">
+                                <h4><a href="#">Як обрати свіжі органічні продукти</a></h4>
+                                <div class="post-meta">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>Квіт. 25, 2021</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="recent-post">
+                            <img src="img/blog-img/recent-3.webp" alt="Post">
+                            <div class="recent-post-content">
+                                <h4><a href="#">ТОП продуктів для зміцнення здоров'я</a></h4>
+                                <div class="post-meta">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>Квіт. 25, 2021</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="blog-list-wrapper">
+            <div class="blog-list-header">
+                <div class="sort">
+                    <span>Сортувати:</span>
+                    <select name="" id="">
+                        <option value="">Нові</option>
+                        <option value="">Рейтинг</option>
+                        <option value="">Відгуки</option>
+                    </select>
+                </div>
+                <div class="results">
+                    <span>52</span> Результати знайдено
+                </div>
+            </div>
+        <div class="blog-list">
+
+        </div>
+        <nav class="pagination">
+            <button class="prev">&lt;</button>
+            <span class="page-numbers">
+            </span>
+            <button class="next">&gt;</button>
+        </nav>
+    </section>
+    </main>
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <div class="subscribe-content">
+                <hr>
+                <div class="subscribe-form">
+                    <svg class="subscribe-logo">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                    <div class="subscribe-text">                    
+                        <h3>Підпишіться на нашу розсилку</h3>
+                        <p>Будьте в курсі акцій, новинок та корисних порад для здорового харчування щодня.</p>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Ваша електронна адреса" required>
+                        <button type="submit">Підписатись</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Про EcoBazar</h3>
+                <div class="about-text">
+                    <span>EcoBazar — це ваш онлайн-супермаркет свіжих та органічних продуктів. 
+                        Ми дбаємо про якість кожного товару, щоб ви отримували лише найкраще щодня.</span>
+                    <div class="footer-link">
+                        <a href="tel:(219)-555-0114"><b>(219) 555-0114</b></a>
+                        <span>|</span>
+                        <a href="mailto:Proxy@gmail.com"><b>Proxy@gmail.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Мій Акаунт</h3>
+                    <ul>
+                        <li>Мій Акаунт</li>
+                        <li>Історія Замовлень</li>
+                        <li>Кошик</li>
+                        <li>Улюблене</li>
+                        <li>Налаштування</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li>Контакти</li>
+                        <li>Часті запитання</li>
+                        <li>Правила та умови</li>
+                        <li>Політика конфіденційності</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>EcoBazar</h3>
+                    <ul>
+                        <li>Про нас</li>
+                        <li>Магазин</li>
+                        <li>Продукція</li>
+                        <li>Відстежити замовлення</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-insta">
+                <h3>Instagram</h3>
+                <div class="instagram-grid">
+                    <img src="img/footer-img/insta1.webp" alt="Instagram 1">
+                    <img src="img/footer-img/insta2.webp" alt="Instagram 2">
+                    <img src="img/footer-img/insta3.webp" alt="Instagram 3">
+                    <img src="img/footer-img/insta4.webp" alt="Instagram 4">
+                    <img src="img/footer-img/insta5.webp" alt="Instagram 5">
+                    <img src="img/footer-img/insta6.webp" alt="Instagram 6">
+                    <img src="img/footer-img/insta7.webp" alt="Instagram 7">
+                    <img src="img/footer-img/insta8.webp" alt="Instagram 8">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>EcoBazar eCommerce &copy; 2021 Всі права захищено</p>
+            <div class="footer-payment">
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#applePay"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#visa"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#discover"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#masterCard"></use>
+                    </svg>
+                    <svg width="65" height="32">
+                        <use xlink:href="img/sprite.svg#secure"></use>
+                    </svg>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn">
+        ↑
+    </button>
+    <script src="js/script.js"></script>
+    <script src="js/script-blog.js"></script>
+</body>
+</html>
+
+

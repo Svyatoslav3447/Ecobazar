@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Магазин EcoBazar: свіжі та органічні продукти, фрукти, овочі та корисні товари для здорового харчування.">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles-minify.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="header-section">
+        <header>
+            <div id="cart-modal-container"></div>
+            <div class="top-bar">
+                    <span class="address">
+                        <svg width="17" height="20">
+                            <use xlink:href="img/sprite.svg#map-pin"></use>
+                        </svg>
+                        Місцезнаходження магазину: Лінкольн-344, Іллінойс, Чикаго, США
+                    </span>
+                    <span class="auth-links">
+                        <span>Укр
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span>
+                        <span>  Грн 
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span><span>|</span>
+                        <a href="sign-in.html">Увійти</a>
+                    </span>
+            </div>
+            <div class="main-header container">
+                <div class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-burger"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark"></i>
+                </div>
+                <svg width="183" height="39">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Пошук</button>
+                </div>
+                <div class="cart-bar">
+                    <a href="whitelist.html">
+                        <svg width="32" height="33">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-cart-btn">
+                        <svg width="37" height="38">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <div class="cart-info">
+                        <p class="cart-title">Кошик:</p>
+                        <p class="cart-price">$57.00</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar nav-shop">
+                <ul class="nav-links">
+                    <li class = "main"><a href="index.html">Головна<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a class="active-nav">Магазин<i class="fa-sharp fa-solid fa-chevron-up"></i></a></li>
+                    <li><a href="blog.html">Блог<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+                <a href="tel:2195550114" class="phone">
+                    <svg width="28" height="28">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    (219) 555-0114</a>
+            </nav>
+        </header> 
+    </section>
+    <section class="shop-bg">
+        <span><i class="fa-solid fa-house"></i></span>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Категорії</span>
+        <span id="category-separator"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="active"></span>
+    </section>
+    <main id="products-list-shop">
+        <div class="filter-toggle-shop">
+            <button id="filter-toggle-btn" class="filter-toggle-shop-btn">
+                <i class="fa-solid fa-chevron-down"></i> Фільтри
+            </button>
+        </div>
+        <section class="filter-panel container">
+            <div class="filter-header">
+                <h2>Фільтри</h2>
+                <button id="reset-filters">Скинути</button>
+            </div>
+
+            <div class="filter-group">
+                <h3>Категорії <i class="fa-solid fa-chevron-down"></i></h3>
+                <ul class="filter-list">
+                    <li><label><input type="radio" name="category" value="Фрукти"> Свіжі фрукти (134)</label></li>
+                    <li><label><input type="radio" name="category" value="Овочі"> Овочі (150)</label></li>
+                    <li><label><input type="radio" name="category" value="Кулінарія"> Кулінарія (54)</label></li>
+                    <li><label><input type="radio" name="category" value="Закуски"> Закуски (47)</label></li>
+                    <li><label><input type="radio" name="category" value="Напої"> Напої (43)</label></li>
+                    <li><label><input type="radio" name="category" value="Краса та здоров'я"> Краса та здоров'я (38)</label></li>
+                    <li><label><input type="radio" name="category" value="Хліб та випічка"> Хліб та випічка (15)</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Ціна <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="price-range">
+                    <div class="dual-slider">
+                        <div class="slider-track"></div>
+                        <input type="range" id="price-min" min="0" max="1000" value="0" class="range-input">
+                        <input type="range" id="price-max" min="0" max="1000" value="1000" class="range-input">
+                        <div class="slider-fill"></div>
+                    </div>
+                    <div class="price-values">
+                        <span>Ціна: <span id="min-value">0</span> - <span id="max-value">1000</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Рейтинг <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="rating-filter">
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="5">
+                        <svg width="98" height="18" class="rating-svg">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        5
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="4">
+                        <svg width="98" height="18" class="rating-svg rating-4">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        4.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="3">
+                        <svg width="98" height="18" class="rating-svg rating-3">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        3.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="2">
+                        <svg width="98" height="18" class="rating-svg rating-2">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        2.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="1">
+                        <svg width="98" height="18" class="rating-svg rating-1">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        1.0+
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Популярні теги <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="tags">
+                    <button class="tag-btn active">Здорове</button>
+                    <button class="tag-btn">Низькокалорійне</button>
+                    <button class="tag-btn">Вегетаріанське</button>
+                    <button class="tag-btn">Свіже</button>
+                    <button class="tag-btn">Вітаміни</button>
+                    <button class="tag-btn">Хліб</button>
+                    <button class="tag-btn">М'ясо</button>
+                    <button class="tag-btn">Закуски</button>
+                    <button class="tag-btn">Обід</button>
+                    <button class="tag-btn">Вечеря</button>
+                    <button class="tag-btn">Сніданок</button>
+                    <button class="tag-btn">Фрукти</button>
+                </div>
+            </div>
+            <div class="discount-shop">
+                <div class="discount-text">
+                    <p><span>79%</span> Знижки</p>
+                    <p>на ваше перше замовлення</p>
+                    <a class="shop-now">Купити <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="sale-products">
+                <p class="sale-title">Товари зі знижкою</p>
+                <div class="sale-products-list"></div>
+            </div>
+        </section>
+        
+    <section class="products-list-container">
+            <div class="products-list-header">
+                <div class="sort">
+                    <span>Сортувати:</span>
+                    <select name="" id="">
+                        <option value="">Нові</option>
+                        <option value="">Рейтинг</option>
+                        <option value="">Відгуки</option>
+                    </select>
+                </div>
+                <div class="results">
+                    <span>52</span> Результати знайдено
+                </div>
+            </div>
+            <div class="products-list">
+            </div>
+            <nav class="pagination">
+                <button class="prev">&lt;</button>
+                <span class="page-numbers"></span>
+                <button class="next">&gt;</button>
+            </nav>
+        </section>
+    </main>
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <div class="subscribe-content">
+                <hr>
+                <div class="subscribe-form">
+                    <svg class="subscribe-logo">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                    <div class="subscribe-text">                    
+                        <h3>Підпишіться на нашу розсилку</h3>
+                        <p>Будьте в курсі акцій, новинок та корисних порад для здорового харчування щодня.</p>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Ваша електронна адреса" required>
+                        <button type="submit">Підписатись</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Про EcoBazar</h3>
+                <div class="about-text">
+                    <span>EcoBazar — це ваш онлайн-супермаркет свіжих та органічних продуктів. 
+                        Ми дбаємо про якість кожного товару, щоб ви отримували лише найкраще щодня.</span>
+                    <div class="footer-link">
+                        <a href="tel:(219)-555-0114"><b>(219) 555-0114</b></a>
+                        <span>|</span>
+                        <a href="mailto:Proxy@gmail.com"><b>Proxy@gmail.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Мій Акаунт</h3>
+                    <ul>
+                        <li>Мій Акаунт</li>
+                        <li>Історія Замовлень</li>
+                        <li>Кошик</li>
+                        <li>Улюблене</li>
+                        <li>Налаштування</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li>Контакти</li>
+                        <li>Часті запитання</li>
+                        <li>Правила та умови</li>
+                        <li>Політика конфіденційності</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>EcoBazar</h3>
+                    <ul>
+                        <li>Про нас</li>
+                        <li>Магазин</li>
+                        <li>Продукція</li>
+                        <li>Відстежити замовлення</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-insta">
+                <h3>Instagram</h3>
+                <div class="instagram-grid">
+                    <img src="img/footer-img/insta1.webp" alt="Instagram 1">
+                    <img src="img/footer-img/insta2.webp" alt="Instagram 2">
+                    <img src="img/footer-img/insta3.webp" alt="Instagram 3">
+                    <img src="img/footer-img/insta4.webp" alt="Instagram 4">
+                    <img src="img/footer-img/insta5.webp" alt="Instagram 5">
+                    <img src="img/footer-img/insta6.webp" alt="Instagram 6">
+                    <img src="img/footer-img/insta7.webp" alt="Instagram 7">
+                    <img src="img/footer-img/insta8.webp" alt="Instagram 8">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>EcoBazar eCommerce &copy; 2021 Всі права захищено</p>
+            <div class="footer-payment">
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#applePay"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#visa"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#discover"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#masterCard"></use>
+                    </svg>
+                    <svg width="65" height="32">
+                        <use xlink:href="img/sprite.svg#secure"></use>
+                    </svg>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn">
+        ↑
+    </button>
+    <script src="js/script.js"></script>
+    <script src="js/script-shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "name": "Зелене яблуко",
+    "price": 14.99,
+    "oldPrice": 20.99,
+    "image": "img/products/Apple.webp",
+    "rating": 5,
+    "sale": true,
+    "category": "Фрукти",
+    "tags": ["солодке", "Свіже"]
+  },
+  {
+    "id": 2,
+    "name": "Манго Сурджапур",
+    "price": 14.99,
+    "image": "img/products/Surjapur_Mango.webp",
+    "rating": 4,
+    "category": "Фрукти",
+    "tags": ["екзотичне", "солодке"]
+  },
+  {
+    "id": 3,
+    "name": "Червоний перець",
+    "price": 32.0,
+    "oldPrice": 20.99,
+    "image": "img/products/Red_Capsicum.webp",
+    "rating": 5,
+    "sale": true,
+    "category": "Овочі",
+    "tags": ["гостре", "Свіже"]
+  },
+  {
+    "id": 4,
+    "name": "Китайська капуста",
+    "price": 24.0,
+    "oldPrice": 20.99,
+    "image": "img/products/cabbage.webp",
+    "rating": 4,
+    "sale": true,
+    "category": "Овочі",
+    "tags": ["Здорове", "Свіже"]
+  },
+  {
+    "id": 5,
+    "name": "Зелений перець",
+    "price": 32.0,
+    "oldPrice": 20.99,
+    "image": "img/products/Eggplant1.webp",
+    "rating": 5,
+    "sale": true,
+    "category": "Овочі",
+    "tags": ["гостре", "Свіже"]
+  },
+  {
+    "id": 6,
+    "name": "Червоні помідори",
+    "price": 14.99,
+    "image": "img/products/Red_Tomatos.webp",
+    "rating": 3,
+    "category": "Овочі",
+    "tags": ["соковите", "Свіже"]
+  },
+  {
+    "id": 7,
+    "name": "Свіжа цвітна капуста",
+    "price": 14.99,
+    "image": "img/products/Fresh_Cauliflower.webp",
+    "rating": 4,
+    "category": "Овочі",
+    "tags": ["Здорове", "Свіже"]
+  },
+  {
+    "id": 8,
+    "name": "Зелений салат",
+    "price": 14.99,
+    "image": "img/products/Green_Lettuce.webp",
+    "rating": 5,
+    "category": "Салати",
+    "tags": ["Здорове", "Свіже"]
+  },
+  {
+    "id": 10,
+    "name": "Баклажан",
+    "price": 14.99,
+    "image": "img/products/Eggplant.webp",
+    "rating": 4,
+    "category": "Овочі",
+    "tags": ["Свіже", "гостре"]
+  },
+  {
+    "id": 12,
+    "name": "Банан",
+    "price": 9.99,
+    "image": "img/products/Banana.webp",
+    "rating": 5,
+    "category": "Фрукти",
+    "tags": ["солодке", "тропічне"]
+  },
+  {
+    "id": 13,
+    "name": "Апельсин",
+    "price": 12.99,
+    "image": "img/products/Orange.webp",
+    "rating": 4,
+    "category": "Фрукти",
+    "tags": ["цитрус", "соковите"]
+  },
+  {
+    "id": 14,
+    "name": "Гранат",
+    "price": 19.99,
+    "image": "img/products/Pomegranate.webp",
+    "rating": 5,
+    "category": "Фрукти",
+    "tags": ["соковите", "суперфуд"]
+  },
+  {
+    "id": 15,
+    "name": "Ківі",
+    "price": 11.99,
+    "image": "img/products/Kiwi.webp",
+    "rating": 4,
+    "category": "Фрукти",
+    "tags": ["екзотичне", "Свіже"]
+  },
+  {
+    "id": 16,
+    "name": "Морква",
+    "price": 8.99,
+    "image": "img/products/Carrot.webp",
+    "rating": 4,
+    "category": "Овочі",
+    "tags": ["Свіже", "корисне"]
+  },
+  {
+    "id": 17,
+    "name": "Огірок",
+    "price": 7.99,
+    "image": "img/products/Cucumber.webp",
+    "rating": 3,
+    "category": "Овочі",
+    "tags": ["Свіже", "Здорове"]
+  },
+  {
+    "id": 18,
+    "name": "Лимон",
+    "price": 6.99,
+    "image": "img/products/Lemon.webp",
+    "rating": 5,
+    "category": "Фрукти",
+    "tags": ["цитрус", "Свіже"]
+  },
+  {
+    "id": 19,
+    "name": "Полуниця",
+    "price": 15.99,
+    "oldPrice": 31.99,
+    "image": "img/products/Strawberry.webp",
+    "rating": 5,
+    "sale": true,
+    "category": "Фрукти",
+    "tags": ["солодке", "Свіже"]
+  },
+  {
+    "id": 20,
+    "name": "Вишня",
+    "price": 18.99,
+    "image": "img/products/Cherry.webp",
+    "rating": 4,
+    "category": "Фрукти",
+    "tags": ["солодке", "ягідне"]
+  },
+  {
+    "id": 21,
+    "name": "Гарбуз",
+    "price": 12.99,
+    "image": "img/products/Pumpkin.webp",
+    "rating": 3,
+    "category": "Овочі",
+    "tags": ["Свіже", "корисне"]
+  },
+  {
+    "id": 22,
+    "name": "Салат Айсберг",
+    "price": 14.99,
+    "image": "img/products/Iceberg.webp",
+    "rating": 4,
+    "category": "Салати",
+    "tags": ["Здорове", "Свіже"]
+  },
+  {
+    "id": 23,
+    "name": "Напій апельсиновий",
+    "price": 5.99,
+    "image": "img/products/OrangeJuice.webp",
+    "rating": 4,
+    "category": "Напої",
+    "tags": ["Свіже", "цитрус"]
+  },
+  {
+    "id": 24,
+    "name": "Напій яблучний",
+    "price": 5.49,
+    "image": "img/products/AppleJuice.webp",
+    "rating": 5,
+    "category": "Напої",
+    "tags": ["Свіже", "солодке"]
+  },
+  {
+    "id": 25,
+    "name": "Кокос",
+    "price": 22.99,
+    "image": "img/products/Coconut.webp",
+    "rating": 5,
+    "sale": true,
+    "category": "Фрукти",
+    "tags": ["екзотичне", "Свіже"]
+  }
+]
